@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  },
+  "scripts": {
+    "dev:css": "tailwindcss -i ./frontend-engineer-page/src/styles/main.css -o ./frontend-engineer-page/src/styles/tailwind.css -w",
+    "build:css": "tailwindcss -i ./frontend-engineer-page/src/styles/main.css -o ./frontend-engineer-page/src/styles/tailwind.css --minify"
+  }
+}
