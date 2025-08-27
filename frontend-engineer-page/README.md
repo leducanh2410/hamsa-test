@@ -1,46 +1,40 @@
 # Frontend Engineer Page
 
-This project is a simple webpage designed for a Frontend Engineer, showcasing various elements and features as per the provided Figma design.
+## Responsive Design System
 
-## Project Structure
+Dự án này sử dụng hệ thống tự động chuyển hướng giữa desktop và mobile dựa trên thiết bị.
 
-```
-frontend-engineer-page
-├── src
-│   ├── index.html        # Main HTML document
-│   ├── styles            # Contains CSS styles
-│   │   └── main.css      # Main stylesheet
-│   └── scripts           # Contains JavaScript files
-│       └── mega-menu.js  # JavaScript for mega menu functionality
-└── README.md             # Project documentation
-```
+### Cách hoạt động
 
-## Setup Instructions
+1. **File chính**: `index.html` - Trang desktop
+2. **File mobile**: `indexSp.html` - Trang mobile 
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
+### Logic phát hiện thiết bị
 
-2. Navigate to the project directory:
-   ```
-   cd frontend-engineer-page
-   ```
+#### Trong `index.html` (Desktop):
+- Phát hiện thiết bị mobile và chuyển hướng đến `indexSp.html`
+- Tiêu chí phát hiện:
+  - Màn hình ≤ 768px
 
-3. Open the `src/index.html` file in your web browser to view the page.
+#### Trong `indexSp.html` (Mobile):
+- Phát hiện thiết bị desktop và chuyển về `index.html`
+- Tiêu chí phát hiện:
+  - Màn hình > 768px
 
-## Features
+### Tính năng
 
-- Responsive layout that adapts to different screen sizes.
-- Mega menu functionality for easy navigation.
-- Custom styles that align with the Figma design specifications.
 
-## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+### Cách sử dụng
 
-## Contributing
+1. Mở `index.html` trong trình duyệt
+2. Hệ thống sẽ tự động:
+   - Hiển thị trang desktop nếu là máy tính
+   - Chuyển hướng đến trang mobile nếu là điện thoại/tablet
 
-Feel free to submit issues or pull requests for any improvements or features you would like to see in this project.
+### Responsive Breakpoints
+
+- **Mobile**: ≤ 768px
+- **Desktop**: > 768px
+
+
